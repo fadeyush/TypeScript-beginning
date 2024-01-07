@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-interface CradProps {
+interface CardProps {
     width: string;
     height?: string;
-    children?: React.ReactNode;
+    children?: React.ReactNode
 }
 
-const Card = ({width, height, children}: CradProps) => {
+const Card: FC<CardProps> = ({width, height, children}) => {
     return (
         <div style={{width, height, border: '1px solid gray'}}>
             {children}
