@@ -6,10 +6,10 @@ interface CradProps {
     children?: React.ReactNode;
 }
 
-const Card = ({width, height}: CradProps) => {
+const Card = ({width, height, children}: CradProps) => {
     return (
         <div style={{width, height, border: '1px solid gray'}}>
-            
+            {children}
         </div>
     );
 };
