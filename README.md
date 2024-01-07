@@ -2,3 +2,4 @@
 
 ## Рассмотренный и реализованный материал:
 - interface
+- children в interface
