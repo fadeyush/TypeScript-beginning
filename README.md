@@ -4,3 +4,4 @@
 - interface
 - children в interface
 - Дженерики
+- enum
