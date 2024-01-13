@@ -5,3 +5,4 @@
 - children в interface
 - Дженерики
 - enum
+- типизация функции: void
