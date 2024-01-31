@@ -7,4 +7,4 @@
 - enum
 - типизация функции: void
 - тип T
-- типизация событий. MouseEvents
+- типизация событий. MouseEvents, Drag-and-drop
