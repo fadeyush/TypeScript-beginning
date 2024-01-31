@@ -8,3 +8,4 @@
 - типизация функции: void
 - тип T
 - типизация событий. MouseEvents, Drag-and-drop
+- useRef
