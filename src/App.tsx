@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import UsersPage from './pages/UsersPage';
 import TodosPage from './pages/TodosPage';
 import { Link } from 'react-router-dom';
+import UserItemPage from './pages/UserItemPage';
 
 const App = () => {
   
@@ -14,6 +15,7 @@ const App = () => {
     <Link to={'/todos'}>Список дел</Link>
       <Routes>
         <Route path="/users" element={<UsersPage/>}/>
+        <Route path="/users/:id" element={<UserItemPage/>}/>
         <Route path="/todos" element={<TodosPage/>}/>
       </Routes>
     </BrowserRouter>
