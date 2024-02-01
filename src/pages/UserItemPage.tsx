@@ -25,7 +25,6 @@ const UserItemPage: FC = () => {
         }
     }
 
-
     return (
         <div>
             <h1>Страница пользователя {user?.name}</h1>

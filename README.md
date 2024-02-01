@@ -9,3 +9,4 @@
 - тип T
 - типизация событий. MouseEvents, Drag-and-drop
 - useRef
+- Типизация react-router-dom. useNavigate, useParams, BrowserRouter 
