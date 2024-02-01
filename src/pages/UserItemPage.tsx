@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { IUser } from '../types/types';
 import axios from 'axios';
 
@@ -10,6 +10,7 @@ type UserItemPageParams = {
 const UserItemPage: FC = () => {
     const pageNumber = useParams<UserItemPageParams>();
     const [user, setUser] = useState<IUser | null>(null);
+    const router = useNavigate();
     
     useEffect(() => {
         fetchUser();
@@ -27,6 +28,7 @@ const UserItemPage: FC = () => {
 
     return (
         <div>
+            <button onClick={()=>router(`/users`)}>Back</button>
             <h1>Страница пользователя {user?.name}</h1>
             <p>email пользователя: {user?.email}</p>
             <p>адрес пользователя: {user?.address.city} {user?.address.street}</p>
